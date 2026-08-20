@@ -5,7 +5,7 @@ import "./globals.css";
 
 const display = Cormorant_Garamond({subsets:["latin"], variable:"--font-display", weight:["500","600","700"]});
 const sans = DM_Sans({subsets:["latin"], variable:"--font-sans"});
-const siteUrl=process.env.NEXT_PUBLIC_SITE_URL??"https://indoethno.com";
+const siteUrl=process.env.NEXT_PUBLIC_SITE_URL?.trim()||"https://indoethno.com";
 export const metadata: Metadata = {
   metadataBase:new URL(siteUrl),
   title:{default:"IndoEthno — Discover the Real Indonesia",template:"%s | IndoEthno"},
