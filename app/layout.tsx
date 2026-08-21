@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import {Analytics} from "./components/analytics";
 import "./globals.css";
+import "./planner.css";
+import "./audit-fixes.css";
 
 const display = Cormorant_Garamond({subsets:["latin"], variable:"--font-display", weight:["500","600","700"]});
 const sans = DM_Sans({subsets:["latin"], variable:"--font-sans"});

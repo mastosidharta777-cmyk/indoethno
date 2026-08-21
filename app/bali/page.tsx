@@ -1,7 +1,12 @@
 import type {Metadata} from "next";
-import {ArrowLeft,ArrowRight,Car,Clock,Compass,Heart,MapPin,Menu,Plane,Route} from "lucide-react";
-import {baliActivities as activities,baliStayAreas as stays,baliTransport,inventoryUrl} from "../data/travel-inventory";
+import {ArrowLeft,ArrowRight,Car,Clock,Compass,MapPin,Plane,Route} from "lucide-react";
+import {baliActivities as allActivities,baliStayAreas as allStays,baliTransport as allTransport,inventoryUrl} from "../data/travel-inventory";
+import {BaliMenuIcon as Menu,InteractiveHeart as Heart} from "../components/home-interactions";
 import "./bali.css";
+
+const activities=allActivities.filter(item=>item.active);
+const stays=allStays.filter(item=>item.active);
+const baliTransport=allTransport.filter(item=>item.active);
 
 export const metadata:Metadata={
 title:{absolute:"Bali Beyond the Obvious — Things to Do, Stays & Itinerary | IndoEthno"},
@@ -15,12 +20,12 @@ const cultures=[
  ["02","GWK Cultural Park","See monumental Balinese art and scheduled cultural performances in Ungasan.",inventoryUrl(activities[2])],
  ["03","Traditional dance","See the Ramayana translated into chorus, movement, and firelight at Uluwatu.",inventoryUrl(activities[3])],
  ["04","Sacred forest","Walk among historic temples and resident macaques in Ubud’s forest sanctuary.",inventoryUrl(activities[4])],
- ["05","Bali cultural experiences","Browse currently available classes, culture, and tours across Bali.","https://www.traveloka.com/en-id/activities/indonesia/region/bali-102746"],
+ ["05","Bali cultural experiences","Browse currently available classes, culture, and tours across Bali.",inventoryUrl(baliTransport[2])],
 ];
 
 function Logo(){return <a className="logo" href="/"><span className="logo-mark">IE</span><span>IndoEthno</span></a>}
 function Head({eyebrow,title}:{eyebrow:string,title:string}){return <div className="bali-head"><p className="eyebrow">{eyebrow}</p><h2>{title}</h2></div>}
-function Footer(){return <footer><div className="footer-top"><div><a className="logo text-white" href="/"><span className="logo-mark">IE</span><span>IndoEthno</span></a><p>Travel deeper into the world’s<br/>most extraordinary archipelago.</p></div><div className="footer-links"><div><b>EXPLORE</b><a href="/#destinations">Destinations</a><a href="#things-to-do">Experiences</a><a href="#stays">Hotels</a></div><div><b>PLAN</b><a href="/#planner">Trip planner</a><a href="#itinerary">Itineraries</a><a href="#culture">Travel responsibly</a></div><div><b>DISCOVER</b><a href="/about">About</a><a href="/contact">Contact</a><a href="/affiliate-disclosure">Affiliate disclosure</a></div></div><div className="newsletter"><b>LET INDONESIA FIND YOU</b><p>Stories, places, and journeys worth making.</p><label><input placeholder="Your email address"/><button aria-label="Subscribe"><ArrowRight/></button></label></div></div><div className="footer-bottom"><span>© 2026 IndoEthno</span><span>Born in Indonesia · Made for the curious</span><div><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div></div></footer>}
+function Footer(){return <footer><div className="footer-top"><div><a className="logo text-white" href="/"><span className="logo-mark">IE</span><span>IndoEthno</span></a><p>Travel deeper into the world’s<br/>most extraordinary archipelago.</p></div><div className="footer-links"><div><b>EXPLORE</b><a href="/#destinations">Destinations</a><a href="#things-to-do">Experiences</a><a href="#stays">Hotels</a></div><div><b>PLAN</b><a href="/#planner">Trip planner</a><a href="#itinerary">Itineraries</a><a href="/affiliate-disclosure">Travel responsibly</a></div><div><b>DISCOVER</b><a href="/about">About</a><a href="/contact">Contact</a><a href="/affiliate-disclosure">Affiliate disclosure</a></div></div><div className="newsletter"><b>LET INDONESIA FIND YOU</b><p>Stories, places, and journeys worth making.</p><label title="Newsletter signup coming later"><input placeholder="Newsletter coming soon" disabled aria-label="Newsletter signup coming later"/><button aria-label="Newsletter signup coming later" disabled><ArrowRight/></button></label></div></div><div className="footer-bottom"><span>© 2026 IndoEthno</span><span>Born in Indonesia · Made for the curious</span><div><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div></div></footer>}
 
 export default function BaliPage(){const schema={"@context":"https://schema.org","@type":"TouristDestination",name:"Bali",description:metadata.description,url:"https://indoethno.com/bali",touristType:["Cultural travel","Nature travel","Food travel"]};return <main className="bali-page">
  <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(schema)}}/>
