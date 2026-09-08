@@ -25,7 +25,7 @@ export default async function MusicStoryPage({ params }: { params: Promise<{ slu
               <p className="musicType">{artist.musicType}</p>
               <div className="actions">
                 <SaveButton item={{ id: `sound-${artist.slug}`, type: 'sound', title: artist.name, subtitle: artist.musicType, href: `/music/${artist.slug}` }} />
-                <Link className="btn glassBtn" href="/destination/yogyakarta">Explore Yogyakarta</Link>
+                <Link className="btn glassBtn" href="/destination/yogyakarta#culture">Follow this sound into Yogyakarta</Link>
               </div>
             </div>
             <div className="status statusLight"><span className="dot" />{statusLabel}</div>
@@ -52,7 +52,15 @@ export default async function MusicStoryPage({ params }: { params: Promise<{ slu
           </section>
 
           <section className="section">
-            <div className="sectionHead"><div><p className="eyebrow">Cultural context</p><h2>Follow the sound outward</h2></div><p>Verified cultural layers, kept editorially separate from claims about the artist.</p></div>
+            <div className="sectionHead">
+              <div><p className="eyebrow">Next · Place</p><h2>Put the sound into Yogyakarta.</h2></div>
+              <p>The artist story is the gateway. Continue into the destination to understand the cultural context, what is around the core cluster, what is worth a detour, and what could turn into a real trip.</p>
+            </div>
+            <div className="actions"><Link className="btn dark" href="/destination/yogyakarta#culture">Continue to Yogyakarta</Link></div>
+          </section>
+
+          <section className="section">
+            <div className="sectionHead"><div><p className="eyebrow">Culture preview</p><h2>Follow the sound outward</h2></div><p>Verified cultural layers, kept editorially separate from claims about the artist.</p></div>
             <div className="grid3 editorialGrid">
               {culturalContext.map((item) => (
                 <article className="editorialCard" key={item.id}>
@@ -66,7 +74,7 @@ export default async function MusicStoryPage({ params }: { params: Promise<{ slu
       </main>
 
       <section className="darkBand"><div className="shell performanceBand"><div><p className="eyebrow light">Performance</p><h2>Experience the music live.</h2><p>IndoEthno never implies availability without direct confirmation.</p></div><div>{artist.performanceStatus === 'AVAILABLE_BY_REQUEST' ? <Link className="btn" href={`/request-experience?artist=${artist.slug}`}>Request a group experience</Link> : artist.performanceStatus === 'SCHEDULED' ? <a className="btn" href="https://ygflive.com/" target="_blank" rel="noreferrer">See official schedule</a> : <Link className="btn" href={`/request-experience?interest=${artist.slug}`}>Express group interest</Link>}<small>{artist.sourceNote}</small></div></div></section>
-      <footer className="shell footer"><span>IndoEthno pilot</span><span>Music → Place → Culture → Travel intent</span></footer>
+      <footer className="shell footer"><span>IndoEthno pilot</span><span>Sound → Place → Culture → Around Here → Worth a Detour → Travel intent</span></footer>
     </>
   );
 }
