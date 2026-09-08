@@ -18,23 +18,22 @@
 }
 
 .comingPhoto {
-  background-image: url('https://commons.wikimedia.org/wiki/Special:Redirect/file/Sunrise_over_Borobudur.jpg');
+  background-image: url('/indoethno-hero.jpg');
   background-size: cover;
   background-position: center 42%;
-  transform: scale(1.015);
-  filter: saturate(.82) contrast(1.05) brightness(.82);
+  transform: scale(1.01);
+  filter: saturate(.92) contrast(1.04) brightness(.84);
 }
 
 .comingShade {
   background:
-    linear-gradient(90deg, rgba(12,12,9,.84) 0%, rgba(12,12,9,.66) 31%, rgba(12,12,9,.2) 58%, rgba(12,12,9,.34) 100%),
-    linear-gradient(180deg, rgba(10,10,8,.18) 0%, rgba(10,10,8,.07) 48%, rgba(10,10,8,.72) 100%),
-    radial-gradient(circle at 72% 37%, rgba(220,168,92,.18), transparent 25%);
+    linear-gradient(90deg, rgba(9,10,8,.88) 0%, rgba(9,10,8,.72) 27%, rgba(9,10,8,.18) 55%, rgba(9,10,8,.20) 100%),
+    linear-gradient(180deg, rgba(8,9,7,.08) 0%, rgba(8,9,7,.06) 52%, rgba(8,9,7,.84) 100%);
 }
 
 .comingEditorial .comingGrain {
-  opacity: .13;
-  background-image: radial-gradient(rgba(255,255,255,.28) .55px, transparent .55px);
+  opacity: .09;
+  background-image: radial-gradient(rgba(255,255,255,.25) .5px, transparent .5px);
   background-size: 4px 4px;
   mask-image: none;
 }
@@ -59,12 +58,12 @@
 .comingBrandBlock { display: grid; gap: 5px; }
 .comingBrand { letter-spacing: .04em; font-size: 24px; text-transform: none; }
 .comingBrand span { color: #f6f0e5; font-weight: 500; }
-.comingBrand b { color: #c89b52; font-weight: 500; }
+.comingBrand b { color: #e4a84d; font-weight: 500; }
 .comingTagline {
   text-transform: uppercase;
   letter-spacing: .19em;
   font-size: 8px;
-  color: rgba(255,255,255,.57);
+  color: rgba(255,255,255,.62);
 }
 
 .comingNavLinks {
@@ -72,7 +71,7 @@
   align-items: center;
   gap: 30px;
   font-size: 11px;
-  color: rgba(255,255,255,.78);
+  color: rgba(255,255,255,.84);
 }
 .comingNavLinks a { transition: opacity .2s ease, border-color .2s ease; }
 .comingNavLinks a:hover { opacity: .62; }
@@ -81,59 +80,53 @@
   gap: 8px;
   align-items: center;
   padding: 9px 13px;
-  border: 1px solid rgba(255,255,255,.34);
+  border: 1px solid rgba(255,255,255,.42);
   border-radius: 999px;
-  background: rgba(12,12,9,.16);
+  background: rgba(12,12,9,.12);
   backdrop-filter: blur(10px);
 }
 
 .comingHeroGrid {
-  min-height: 690px;
-  padding: 74px 0 62px;
+  min-height: 630px;
+  padding: 58px 0 54px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 290px;
-  gap: 70px;
+  grid-template-columns: minmax(0, 1fr) 270px;
+  gap: 64px;
   align-items: end;
 }
 
-.comingHeroCopy { max-width: 670px; }
-.comingKicker {
-  margin: 0 0 18px;
-  text-transform: uppercase;
-  letter-spacing: .24em;
-  font-size: 9px;
-  font-weight: 700;
-  color: #d9b26d;
-}
+.comingHeroCopy { max-width: 620px; }
 .comingEditorial h1 {
   margin: 0;
-  max-width: 640px;
-  font-size: clamp(70px, 8.25vw, 118px);
-  line-height: .84;
+  max-width: 620px;
+  font-size: clamp(66px, 7.8vw, 112px);
+  line-height: .83;
   letter-spacing: -.052em;
-  text-shadow: 0 4px 34px rgba(0,0,0,.22);
+  font-family: "Iowan Old Style", Baskerville, Georgia, serif;
+  font-weight: 500;
+  text-shadow: 0 4px 34px rgba(0,0,0,.34);
 }
 .comingEditorial h1 em {
-  color: #d3a45c;
+  color: #e5a94e;
   font-style: normal;
 }
 .comingIntro {
-  margin: 28px 0 0;
-  max-width: 590px;
-  color: rgba(255,255,255,.76);
+  margin: 26px 0 0;
+  max-width: 570px;
+  color: rgba(255,255,255,.82);
   font-size: 15px;
-  line-height: 1.75;
+  line-height: 1.65;
 }
 .comingLaunch {
-  margin-top: 27px;
+  margin-top: 25px;
   text-transform: uppercase;
   letter-spacing: .32em;
   font-size: 9px;
-  color: rgba(255,255,255,.7);
+  color: #e5b866;
 }
 
-.comingSignupBlock { margin-top: 24px; max-width: 520px; }
-.comingSignupBlock > p { margin: 0 0 10px; font-size: 12px; color: rgba(255,255,255,.68); }
+.comingSignupBlock { margin-top: 22px; max-width: 520px; }
+.comingSignupBlock > p { margin: 0 0 10px; font-size: 12px; color: rgba(255,255,255,.76); }
 .comingEditorial .signup.comingSignup {
   display: flex;
   max-width: 480px;
@@ -141,9 +134,9 @@
   padding: 4px 5px 4px 17px;
   gap: 8px;
   align-items: center;
-  border: 1px solid rgba(255,255,255,.28);
+  border: 1px solid rgba(255,255,255,.42);
   border-radius: 999px;
-  background: rgba(9,10,8,.26);
+  background: rgba(9,10,8,.28);
   backdrop-filter: blur(10px);
 }
 .comingEditorial .signup.comingSignup input {
@@ -154,7 +147,7 @@
   color: white;
   border-radius: 0;
 }
-.comingEditorial .signup.comingSignup input::placeholder { color: rgba(255,255,255,.5); }
+.comingEditorial .signup.comingSignup input::placeholder { color: rgba(255,255,255,.56); }
 .comingEditorial .signup.comingSignup input:focus { outline: none; }
 .comingSignup button {
   flex: 0 0 42px;
@@ -162,7 +155,7 @@
   height: 42px;
   border: 0;
   border-radius: 50%;
-  background: #c89b52;
+  background: #e5a94e;
   color: #17150f;
   font-size: 20px;
   cursor: pointer;
@@ -172,14 +165,14 @@
   gap: 8px;
   align-items: center;
   margin-top: 9px;
-  color: rgba(255,255,255,.48);
+  color: rgba(255,255,255,.58);
   font-size: 9px;
   line-height: 1.35;
 }
-.comingConsent input { accent-color: #c89b52; }
+.comingConsent input { accent-color: #e5a94e; }
 
 .comingRightRail {
-  min-height: 470px;
+  min-height: 430px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -187,28 +180,28 @@
   text-align: right;
 }
 .comingScript {
-  padding-top: 58px;
+  padding-top: 34px;
   font-family: "Iowan Old Style", Baskerville, Georgia, serif;
   font-style: italic;
   font-size: 34px;
   line-height: .94;
-  color: rgba(255,255,255,.77);
+  color: rgba(255,255,255,.82);
   transform: rotate(-4deg);
 }
-.comingScript span { color: #d4aa67; }
+.comingScript span { color: #e0ab59; }
 .comingLocation {
   display: flex;
   gap: 9px;
   align-items: flex-start;
   font-size: 12px;
-  color: rgba(255,255,255,.76);
+  color: rgba(255,255,255,.82);
 }
 .comingLocation > span { line-height: 1.25; }
 
 .comingFeatureBand {
-  border-top: 1px solid rgba(255,255,255,.16);
-  border-bottom: 1px solid rgba(255,255,255,.1);
-  background: rgba(18,17,13,.89);
+  border-top: 1px solid rgba(255,255,255,.14);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  background: rgba(12,13,10,.94);
   backdrop-filter: blur(16px);
 }
 .comingFeatures {
@@ -226,14 +219,14 @@
   border-right: 1px solid rgba(255,255,255,.09);
 }
 .comingFeature + .comingFeature { padding-left: 22px; }
-.comingFeatureIcon { margin-bottom: 12px; color: #c89b52; font-size: 20px; }
+.comingFeatureIcon { margin-bottom: 12px; color: #e5a94e; font-size: 20px; }
 .comingFeature strong {
   text-transform: uppercase;
   letter-spacing: .15em;
   font-size: 9px;
   color: #e8d8bb;
 }
-.comingFeature small { margin-top: 7px; color: rgba(255,255,255,.46); font-size: 10px; line-height: 1.45; }
+.comingFeature small { margin-top: 7px; color: rgba(255,255,255,.52); font-size: 10px; line-height: 1.45; }
 .comingFeatureStatement {
   padding-left: 27px;
   padding-right: 0;
@@ -244,32 +237,32 @@
   letter-spacing: .17em;
   font-size: 9px;
   line-height: 1.55;
-  color: rgba(255,255,255,.58);
+  color: rgba(255,255,255,.62);
 }
 .comingFeatureStatement b {
   margin-top: 13px;
   font-family: "Iowan Old Style", Baskerville, Georgia, serif;
   font-size: 18px;
   font-weight: 500;
-  color: #c89b52;
+  color: #e5a94e;
 }
 
 .comingFooterEditorial {
-  min-height: 66px;
+  min-height: 64px;
   margin: 0 auto;
-  padding: 22px 0;
+  padding: 21px 0;
   border-top: 0;
   display: flex;
   justify-content: space-between;
   gap: 20px;
   font-family: inherit;
   font-size: 9px;
-  color: rgba(255,255,255,.42);
+  color: rgba(255,255,255,.46);
 }
-.comingPhotoCredit { text-align: center; }
 
 @media (max-width: 980px) {
-  .comingHeroGrid { grid-template-columns: 1fr 210px; min-height: 650px; gap: 30px; }
+  .comingPhoto { background-position: 44% center; }
+  .comingHeroGrid { grid-template-columns: 1fr 205px; min-height: 620px; gap: 28px; }
   .comingFeatures { grid-template-columns: repeat(3, 1fr); }
   .comingFeature:nth-child(3) { border-right: 0; }
   .comingFeature:nth-child(n+4), .comingFeatureStatement { border-top: 1px solid rgba(255,255,255,.09); }
@@ -277,20 +270,20 @@
 }
 
 @media (max-width: 760px) {
-  .comingPhoto { background-position: 62% center; }
+  .comingPhoto { background-position: 40% center; }
   .comingShade {
     background:
-      linear-gradient(90deg, rgba(11,11,9,.77), rgba(11,11,9,.28)),
-      linear-gradient(180deg, rgba(10,10,8,.08) 0%, rgba(10,10,8,.3) 43%, rgba(10,10,8,.88) 100%);
+      linear-gradient(90deg, rgba(8,9,7,.78), rgba(8,9,7,.28)),
+      linear-gradient(180deg, rgba(8,9,7,.10) 0%, rgba(8,9,7,.32) 44%, rgba(8,9,7,.90) 100%);
   }
   .comingTopbar { min-height: 88px; padding-top: 21px; }
   .comingTagline { font-size: 7px; letter-spacing: .13em; }
   .comingNavLinks a:not(.comingNotifyMini) { display: none; }
   .comingNotifyMini span { display: none; }
   .comingNotifyMini { width: 38px; height: 38px; justify-content: center; padding: 0; }
-  .comingHeroGrid { min-height: 650px; grid-template-columns: 1fr; align-items: end; padding: 72px 0 40px; }
+  .comingHeroGrid { min-height: 620px; grid-template-columns: 1fr; align-items: end; padding: 62px 0 38px; }
   .comingRightRail { display: none; }
-  .comingEditorial h1 { font-size: clamp(64px, 20vw, 98px); }
+  .comingEditorial h1 { font-size: clamp(58px, 18vw, 88px); }
   .comingIntro { max-width: 92%; font-size: 14px; }
   .comingFeatures { grid-template-columns: repeat(2, 1fr); }
   .comingFeature:nth-child(odd) { padding-left: 0; }
@@ -299,14 +292,14 @@
   .comingFeature:first-child, .comingFeature:nth-child(2) { border-top: 0; }
   .comingFeatureStatement { grid-column: 1 / -1; padding: 24px 0; }
   .comingFooterEditorial { flex-direction: column; align-items: flex-start; gap: 6px; }
-  .comingPhotoCredit { text-align: left; }
 }
 
 @media (max-width: 480px) {
+  .comingPhoto { background-position: 37% center; }
   .comingBrand { font-size: 21px; }
   .comingTagline { max-width: 220px; line-height: 1.35; }
-  .comingHeroGrid { min-height: 620px; padding-top: 56px; }
-  .comingEditorial h1 { font-size: clamp(58px, 20vw, 82px); }
+  .comingHeroGrid { min-height: 600px; padding-top: 54px; }
+  .comingEditorial h1 { font-size: clamp(54px, 18vw, 78px); }
   .comingEditorial .signup.comingSignup { max-width: 100%; }
   .comingConsent { align-items: flex-start; }
 }
