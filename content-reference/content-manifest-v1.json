@@ -1,0 +1,243 @@
+{
+  "project": "IndoEthno",
+  "version": "Content Manifest V1",
+  "pilot_destination": "Yogyakarta",
+  "product_thesis": "Music-led cultural travel discovery: Sound → Place → Culture → Around Here → Worth a Detour → Travel Intent",
+  "content_rights_policy": {
+    "video": "Use official YouTube/social embeds only; never download/re-upload for pilot.",
+    "photos": "Do not host artist photos without permission. Use official social embeds or video thumbnails until approved press kit is received.",
+    "editorial": "All IndoEthno story copy is original editorial based on verified public sources; do not copy bios or lyrics.",
+    "credits": "Always show artist/source attribution and link to the official channel/source.",
+    "commercial_publication": "Before public monetized launch, request artist/management approval for promotional assets and press kit."
+  },
+  "ui_sections": [
+    "Homepage / Music Discovery",
+    "Music Story",
+    "Where This Sound Lives",
+    "Cultural Context",
+    "Around Here",
+    "Worth a Detour",
+    "Scheduled Performance / Available by Request",
+    "Save / Plan Visit",
+    "Request Performance",
+    "Travel / Referral CTA"
+  ],
+  "artists": [
+    {
+      "id": "jhf",
+      "name": "Jogja Hip Hop Foundation",
+      "role_in_pilot": "Modern local identity / hip-hop gateway",
+      "status_2026": "Active; public evidence includes 2026 Angkringan Hip Hop activity and current catalog presence.",
+      "origin": "Yogyakarta",
+      "music_type": "Modern-local / hip-hop / Javanese-language cultural expression",
+      "hero_title": "Jogja Istimewa",
+      "hero_video_candidates": [
+        {
+          "url": "https://www.youtube.com/watch?v=F18vJTtX_Ns",
+          "label": "Jogja Istimewa (Official Klip)",
+          "status": "Candidate confirmed by multiple public references; test embed availability during build."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=km_RMAb3rDo",
+          "label": "Jogja Istimewa — Jogja Hip Hop Foundation Topic",
+          "status": "Confirmed YouTube Topic fallback; audio-first rather than visual-first."
+        }
+      ],
+      "official_links": [
+        "https://open.spotify.com/artist/0Pk4JEXgC64RBmovnQDZ27",
+        "https://www.instagram.com/jhf_no.1/"
+      ],
+      "story_headline_en": "Hip-hop, but unmistakably Jogja.",
+      "story_en": "Jogja Hip Hop Foundation shows that local identity does not have to stay inside a traditional musical form. Urban beats, Javanese language, social commentary and references to local literature turn hip-hop into a portrait of Yogyakarta itself. For IndoEthno, the music is the doorway: hear the city first, then step into the streets, traditions, food, art spaces and communities that shaped its voice.",
+      "story_id": "Jogja Hip Hop Foundation menunjukkan bahwa identitas lokal tidak harus tinggal di dalam bentuk musik tradisional. Beat urban, bahasa Jawa, komentar sosial, dan rujukan pada sastra lokal menjadikan hip-hop sebagai potret Yogyakarta masa kini. Di IndoEthno, musik menjadi pintu masuk: dengarkan kotanya lebih dulu, lalu jelajahi ruang, tradisi, kuliner, seni, dan komunitas yang membentuk suaranya.",
+      "performance_status": "Discovery Only until availability/booking terms are confirmed directly.",
+      "cta": [
+        "Explore Yogyakarta",
+        "Save to Trip",
+        "Follow Artist"
+      ],
+      "source_notes": [
+        "Indonesia Ministry of Culture profile describes JHF as a soundtrack of Jogjakarta life and notes Javanese language/gamelan/local literature.",
+        "Spotify shows current catalog and substantial audience.",
+        "2026 public coverage documents Angkringan Hip Hop activity."
+      ]
+    },
+    {
+      "id": "gayam16",
+      "name": "Gayam16 / Yogyakarta Gamelan Festival",
+      "role_in_pilot": "Living tradition / contemporary gamelan / participatory experience",
+      "status_2026": "Confirmed active; YGF 31 ran 21 July–2 August 2026.",
+      "origin": "Yogyakarta",
+      "music_type": "Gamelan / contemporary tradition / cross-cultural collaboration",
+      "hero_title": "Yogyakarta Gamelan Festival",
+      "hero_video_candidates": [
+        {
+          "url": "https://www.youtube.com/@Gayam16",
+          "label": "Yogyakarta Gamelan Festival official YouTube channel",
+          "status": "Confirmed official channel; select one 2026 performance during implementation after embed test."
+        }
+      ],
+      "official_links": [
+        "https://ygflive.com/",
+        "https://www.youtube.com/@Gayam16",
+        "https://www.instagram.com/komunitasgayam16/"
+      ],
+      "story_headline_en": "A centuries-old sound that refuses to stand still.",
+      "story_en": "In Yogyakarta, gamelan is not only preserved; it is rehearsed, reinterpreted, debated and shared. Gayam16 and the Yogyakarta Gamelan Festival create a meeting point for traditional practice, younger musicians, workshops, technology and international collaboration. The result is not a museum display but a living scene that travelers can hear, watch and—when programs allow—join.",
+      "story_id": "Di Yogyakarta, gamelan tidak hanya dilestarikan; ia dilatih, ditafsirkan ulang, didiskusikan, dan dibagikan. Gayam16 dan Yogyakarta Gamelan Festival mempertemukan praktik tradisi, musisi muda, lokakarya, teknologi, dan kolaborasi internasional. Hasilnya bukan pajangan museum, melainkan ekosistem hidup yang dapat didengar, ditonton, dan pada program tertentu diikuti wisatawan.",
+      "performance_status": "Scheduled Performance supported. 'Available by Request' must be confirmed directly before enabling booking CTA.",
+      "cta": [
+        "See Schedule",
+        "Explore Ngasem & Kraton",
+        "Save to Trip"
+      ],
+      "source_notes": [
+        "DIY Tourism confirms YGF 31 dates, location and organizer Gayam16.",
+        "DIY Culture Office documents 2026 collaboration between Compagnie Kotekan and Gayam16.",
+        "YGF official site documents participatory workshops, concerts and the festival's living/adaptive gamelan mission."
+      ]
+    },
+    {
+      "id": "tembang-gula",
+      "name": "Tembang Gula",
+      "role_in_pilot": "Contemporary Javanese popular culture / modern-local gateway",
+      "status_2026": "Confirmed active; performed at ARTJOG 2026.",
+      "origin": "Yogyakarta",
+      "music_type": "Contemporary Javanese pop / dangdut / pop-rock influence",
+      "hero_title": "Tresno Liyane",
+      "hero_video_candidates": [
+        {
+          "url": "https://www.youtube.com/watch?v=x6AWZxYh8E4",
+          "label": "Tresno Liyane — Official Music Video",
+          "status": "Candidate from artist's official-channel references; verify embed flag during build."
+        },
+        {
+          "url": "https://www.youtube.com/@tembanggula.official",
+          "label": "Tembang Gula official YouTube channel",
+          "status": "Use channel as fallback source for a currently embeddable official video."
+        }
+      ],
+      "official_links": [
+        "https://www.youtube.com/@tembanggula.official",
+        "https://www.instagram.com/tembanggula/"
+      ],
+      "story_headline_en": "Local doesn’t have to sound old.",
+      "story_en": "Tembang Gula is useful to IndoEthno for one simple reason: it makes the present tense of local culture obvious. Javanese language and everyday stories meet contemporary pop and dangdut sensibilities, showing that a place keeps producing new culture rather than only preserving the past. This is Yogyakarta as a living creative city—not nostalgia, but identity still being written.",
+      "story_id": "Tembang Gula penting bagi IndoEthno karena menunjukkan bentuk masa kini dari budaya lokal. Bahasa Jawa dan cerita sehari-hari bertemu dengan sensibilitas pop dan dangdut kontemporer, memperlihatkan bahwa suatu tempat terus menciptakan budaya baru, bukan hanya menjaga masa lalu. Inilah Yogyakarta sebagai kota kreatif yang hidup: bukan nostalgia, melainkan identitas yang masih terus ditulis.",
+      "performance_status": "Discovery Only / Available by Request pending direct management confirmation.",
+      "cta": [
+        "Explore Contemporary Jogja",
+        "Save to Trip",
+        "Follow Artist"
+      ],
+      "source_notes": [
+        "ARTJOG 2026 official agenda lists Tembang Gula ft. Ratih SDE & Zio Sandi on 28 June 2026.",
+        "Public artist release information describes the Javanese-language pop/dangdut approach and points to artist social channels."
+      ]
+    }
+  ],
+  "destination": {
+    "id": "yogyakarta",
+    "name": "Yogyakarta",
+    "positioning": "Hear the city before you visit it.",
+    "around_here_rule": "Only show genuinely local/nearby items around the selected music/cultural point. Distance should be calculated from stored coordinates during implementation.",
+    "worth_a_detour_rule": "Use a separate section for destination-wide nature/culture that is attractive but not geographically near the selected point.",
+    "cultural_context": [
+      {
+        "name": "Museum Sonobudoyo",
+        "category": "Heritage / performance",
+        "reason": "Current 2026 wayang kulit, wayang orang and wayang topeng programming; strong bridge from music to broader Javanese culture.",
+        "source": "https://sonobudoyo.jogjaprov.go.id/id/acara"
+      },
+      {
+        "name": "Kraton Yogyakarta",
+        "category": "Living heritage",
+        "reason": "Core cultural context for Yogyakarta court traditions and classical arts.",
+        "source": "https://www.kratonjogja.id/"
+      },
+      {
+        "name": "ARTJOG / Jogja National Museum",
+        "category": "Contemporary arts",
+        "reason": "Shows Yogyakarta's contemporary creative ecosystem and connects naturally to Tembang Gula.",
+        "source": "https://artjog.id/2026/"
+      },
+      {
+        "name": "Yogyakarta Gamelan Festival / Plaza Pasar Ngasem",
+        "category": "Music event",
+        "reason": "Best scheduled-performance example for Gayam16 and living gamelan.",
+        "source": "https://visitingjogja.jogjaprov.go.id/44560/yogyakarta-gamelan-festival-2026-21-juli-2-agustus-2026/"
+      }
+    ],
+    "around_here_examples": [
+      {
+        "name": "Gudeg Wijilan",
+        "category": "Food",
+        "cluster": "Kraton / Ngasem",
+        "source": "https://visitingjogja.jogjaprov.go.id/8045/gudeg-wijilan/"
+      },
+      {
+        "name": "Museum Sonobudoyo",
+        "category": "Heritage / performance",
+        "cluster": "Kraton / Ngasem",
+        "source": "https://sonobudoyo.jogjaprov.go.id/id/information"
+      },
+      {
+        "name": "Kotagede Silver Craft",
+        "category": "Craft / heritage",
+        "cluster": "Yogyakarta urban area",
+        "source": "https://visitingjogja.jogjaprov.go.id/40176/sentra-kerajinan-perak-kota-gede/"
+      }
+    ],
+    "worth_a_detour_examples": [
+      {
+        "name": "Nglanggeran",
+        "category": "Nature + community culture",
+        "source": "https://visitingjogja.jogjaprov.go.id/42234/desa-wisata-nglanggeran-kabupaten-gunungkidul/"
+      },
+      {
+        "name": "Hutan Pinus Mangunan",
+        "category": "Nature",
+        "source": "https://visitingjogja.jogjaprov.go.id/28223/pinus-asri-mangunan/"
+      },
+      {
+        "name": "Ramayana Ballet Prambanan",
+        "category": "Performing arts / heritage",
+        "source": "https://visitingjogja.jogjaprov.go.id/12811/sendratari-ramayana-prambanan/"
+      }
+    ]
+  },
+  "analytics_events": [
+    "music_card_view",
+    "music_story_open",
+    "play_official_embed",
+    "explore_place_click",
+    "cultural_context_open",
+    "around_here_open",
+    "worth_a_detour_open",
+    "save_trip",
+    "plan_visit_click",
+    "schedule_click",
+    "request_performance_click",
+    "outbound_travel_click"
+  ],
+  "build_gates": {
+    "must_pass_before_public_pilot": [
+      "Each hero video embeds successfully and is from an official/authorized channel.",
+      "No artist image is re-hosted without permission.",
+      "All artist profile factual claims have a source.",
+      "Performance availability is not implied unless confirmed.",
+      "Around Here items are distance-accurate from the selected point.",
+      "Expired event dates are clearly marked as archive/past event; current schedule is fetched or maintained separately."
+    ],
+    "not_required_for_pilot": [
+      "Native mobile app",
+      "Payment",
+      "Escrow",
+      "Full login/account system",
+      "Real-time artist availability",
+      "Marketplace dashboard",
+      "AI itinerary",
+      "Deep NusantaraStar integration"
+    ]
+  }
+}
