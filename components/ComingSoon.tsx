@@ -1,3 +1,5 @@
+import './ComingSoon.css';
+
 export function ComingSoon() {
   return (
     <main className="coming comingEditorial">
