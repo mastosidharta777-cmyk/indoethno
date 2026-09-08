@@ -23,7 +23,7 @@ export function PilotHome() {
             <aside className="heroNowPlaying">
               <span className="miniLabel">Pilot idea</span>
               <div className="soundBars" aria-hidden="true"><i/><i/><i/><i/><i/><i/><i/></div>
-              <strong>Sound → Place → Journey</strong>
+              <strong>Sound → Place → Culture → Journey</strong>
               <p>Music is the gateway, not the whole destination.</p>
             </aside>
           </section>
@@ -54,12 +54,12 @@ export function PilotHome() {
 
         <section className="section shell journeySection">
           <div className="sectionHead">
-            <div><p className="eyebrow">How IndoEthno works</p><h2>One sound can reshape a trip.</h2></div>
+            <div><p className="eyebrow">How IndoEthno works</p><h2>A clear path from sound to travel intent.</h2></div>
           </div>
           <div className="journeySteps">
-            <div><span>01</span><strong>Hear</strong><p>Discover a local sound or artist.</p></div>
-            <div><span>02</span><strong>Understand</strong><p>See the place and culture behind it.</p></div>
-            <div><span>03</span><strong>Go further</strong><p>Find nearby food, stays and experiences.</p></div>
+            <div><span>01 · Sound</span><strong>Hear</strong><p>Choose a local sound or artist that makes the place worth noticing.</p></div>
+            <div><span>02 · Place → Culture</span><strong>Follow</strong><p>Move into Yogyakarta, then Culture, Around Here and Worth a Detour.</p></div>
+            <div><span>03 · Travel intent</span><strong>Act</strong><p>Save ideas, review stays, or express interest in a group experience.</p></div>
           </div>
         </section>
 
