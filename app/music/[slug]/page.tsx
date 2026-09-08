@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Nav } from '@/components/Nav';
 import { SaveButton } from '@/components/SaveButton';
-import { culturalContext, getArtist } from '@/lib/data';
+import { getArtist } from '@/lib/data';
 import { isPilot } from '@/lib/site';
 
 export default async function MusicStoryPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -25,7 +25,7 @@ export default async function MusicStoryPage({ params }: { params: Promise<{ slu
               <p className="musicType">{artist.musicType}</p>
               <div className="actions">
                 <SaveButton item={{ id: `sound-${artist.slug}`, type: 'sound', title: artist.name, subtitle: artist.musicType, href: `/music/${artist.slug}` }} />
-                <Link className="btn glassBtn" href="/destination/yogyakarta">Explore Yogyakarta</Link>
+                <a className="btn glassBtn" href="#place">Follow to {artist.journey.place.name}</a>
               </div>
             </div>
             <div className="status statusLight"><span className="dot" />{statusLabel}</div>
@@ -51,22 +51,47 @@ export default async function MusicStoryPage({ params }: { params: Promise<{ slu
             </div>
           </section>
 
-          <section className="section">
-            <div className="sectionHead"><div><p className="eyebrow">Cultural context</p><h2>Follow the sound outward</h2></div><p>Verified cultural layers, kept editorially separate from claims about the artist.</p></div>
-            <div className="grid3 editorialGrid">
-              {culturalContext.map((item) => (
+          <section className="section" id="place">
+            <div className="sectionHead">
+              <div><p className="eyebrow">Next · Place</p><h2>{artist.journey.place.name}</h2></div>
+              <p>This is the verified place relationship for this music story. IndoEthno avoids assigning the same generic Yogyakarta context to every artist.</p>
+            </div>
+            <div className="grid2 editorialGrid">
+              <article className="editorialCard">
+                <div className="meta">{artist.journey.place.category}</div>
+                <h3>Why this place?</h3>
+                <p>{artist.journey.place.blurb}</p>
+                <div className="cardActions">
+                  <a className="textLink" href={artist.journey.place.url} target="_blank" rel="noreferrer">Verify source ↗</a>
+                  <SaveButton compact item={{ id: artist.journey.place.id, type: 'place', title: artist.journey.place.name, subtitle: artist.journey.place.category, href: `/music/${artist.slug}#place` }} />
+                </div>
+              </article>
+              <article className="editorialCard">
+                <div className="meta">Journey logic</div>
+                <h3>Sound becomes somewhere.</h3>
+                <p>Only after the place link is established does the story expand into broader cultural and travel context. That keeps discovery editorial rather than algorithmically attaching generic attractions.</p>
+                <div className="cardActions"><a className="textLink" href="#culture">Continue to culture ↓</a></div>
+              </article>
+            </div>
+          </section>
+
+          <section className="section" id="culture">
+            <div className="sectionHead"><div><p className="eyebrow">Next · Culture</p><h2>What this sound helps reveal</h2></div><p>These cards are selected for this artist. Direct artist facts and broader travel context remain clearly separated.</p></div>
+            <div className="grid2 editorialGrid">
+              {artist.journey.culture.map((item) => (
                 <article className="editorialCard" key={item.id}>
                   <div className="meta">{item.category}</div><h3>{item.name}</h3><p>{item.blurb}</p>
-                  <div className="cardActions"><a className="textLink" href={item.url} target="_blank" rel="noreferrer">Official/source ↗</a><SaveButton compact item={{ id: item.id, type: 'culture', title: item.name, subtitle: item.category, href: '/destination/yogyakarta#culture' }} /></div>
+                  <div className="cardActions"><a className="textLink" href={item.url} target="_blank" rel="noreferrer">Source ↗</a><SaveButton compact item={{ id: item.id, type: 'culture', title: item.name, subtitle: item.category, href: `/music/${artist.slug}#culture` }} /></div>
                 </article>
               ))}
             </div>
+            <div className="actions"><Link className="btn dark" href={artist.journey.continueHref}>{artist.journey.continueLabel}</Link></div>
           </section>
         </div>
       </main>
 
       <section className="darkBand"><div className="shell performanceBand"><div><p className="eyebrow light">Performance</p><h2>Experience the music live.</h2><p>IndoEthno never implies availability without direct confirmation.</p></div><div>{artist.performanceStatus === 'AVAILABLE_BY_REQUEST' ? <Link className="btn" href={`/request-experience?artist=${artist.slug}`}>Request a group experience</Link> : artist.performanceStatus === 'SCHEDULED' ? <a className="btn" href="https://ygflive.com/" target="_blank" rel="noreferrer">See official schedule</a> : <Link className="btn" href={`/request-experience?interest=${artist.slug}`}>Express group interest</Link>}<small>{artist.sourceNote}</small></div></div></section>
-      <footer className="shell footer"><span>IndoEthno pilot</span><span>Music → Place → Culture → Travel intent</span></footer>
+      <footer className="shell footer"><span>IndoEthno pilot</span><span>Sound → Place → Culture → Around Here → Worth a Detour → Travel intent</span></footer>
     </>
   );
 }
