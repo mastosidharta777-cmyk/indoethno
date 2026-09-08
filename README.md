@@ -76,3 +76,4 @@ npm run dev
 3. Add core funnel analytics.
 4. Run actual Next.js build + browser QA after dependencies install successfully.
 5. Connect the correct IndoEthno Git/Vercel project.
+<!-- trigger vercel deployment -->
