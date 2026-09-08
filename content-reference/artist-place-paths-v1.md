@@ -44,4 +44,4 @@ Do not replace an artist merely to chase reach. Replace only when at least one o
 - current activity cannot be verified;
 - the artist cannot support a credible Sound → Place → Culture → Travel story.
 
-This file complements `content-manifest-v1.md` and `content-manifest-v1.json`; `lib/data.ts` is the live Pilot implementation for these paths.
+`lib/data.ts` is the live Pilot implementation for these paths. The content manifests remain reference material and should be refreshed whenever the live Pilot data changes.
