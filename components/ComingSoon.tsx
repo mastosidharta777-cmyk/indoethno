@@ -22,7 +22,6 @@ export function ComingSoon() {
 
       <section id="home" className="shell comingHeroGrid">
         <div className="comingHeroCopy">
-          <p className="comingKicker">Discover Indonesia through its sound</p>
           <h1>Music<br />Brings You<br /><em>Further</em></h1>
           <p className="comingIntro">
             IndoEthno connects music, culture and travel across Indonesia — helping you discover real places,
@@ -61,7 +60,6 @@ export function ComingSoon() {
 
       <footer className="shell comingFooter comingFooterEditorial">
         <span>© 2026 IndoEthno. All rights reserved.</span>
-        <span className="comingPhotoCredit">Photo: Christopher Michel · CC BY-SA 4.0</span>
         <span>Privacy · Terms · Contact</span>
       </footer>
     </main>
