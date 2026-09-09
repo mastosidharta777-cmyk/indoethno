@@ -54,7 +54,7 @@ export function PlanClient() {
       <div className="emptyState">
         <span className="eyebrow">Your trip is empty</span>
         <h2>Start with one sound.</h2>
-        <p>Save a music story, cultural place, nearby idea or stay. Everything stays in this browser for the pilot—no account required.</p>
+        <p>Save a music story, a cultural thread, a nearby place, a stay or a detour. One choice is enough to begin shaping the journey.</p>
         <div className="actions">
           <Link className="btn dark" href="/#sounds">Discover sounds</Link>
           <Link className="btn" href="/destination/yogyakarta">Explore Yogyakarta</Link>
@@ -67,8 +67,8 @@ export function PlanClient() {
     <div className="tripBoard">
       <div className="tripSummary">
         <div>
-          <span className="eyebrow">Saved locally</span>
-          <strong>{items.length} {items.length === 1 ? 'idea' : 'ideas'} shaping this trip</strong>
+          <span className="eyebrow">Saved for this trip</span>
+          <strong>{items.length} {items.length === 1 ? 'idea' : 'ideas'} shaping your Yogyakarta journey</strong>
         </div>
         <button className="textButton" type="button" onClick={clear}>Clear trip</button>
       </div>
@@ -98,13 +98,13 @@ export function PlanClient() {
 
       <div className="tripNext">
         <div>
-          <span className="eyebrow">Travel intent</span>
-          <h2>Choose what this interest becomes.</h2>
-          <p>Review a stay, keep planning, or send a group experience inquiry. V1 measures intent without implying live booking or availability.</p>
+          <span className="eyebrow">Where next?</span>
+          <h2>Turn the saved ideas into a real route.</h2>
+          <p>Choose a base, keep exploring Yogyakarta, or ask whether a music-led group experience could fit the journey.</p>
         </div>
         <div className="actions">
-          <Link className="btn dark" href="/destination/yogyakarta#stay">Review stays</Link>
-          <Link className="btn" href="/request-experience">Group experience inquiry</Link>
+          <Link className="btn dark" href="/destination/yogyakarta#stay">Find a stay</Link>
+          <Link className="btn" href="/request-experience">Ask about a group experience</Link>
         </div>
       </div>
     </div>

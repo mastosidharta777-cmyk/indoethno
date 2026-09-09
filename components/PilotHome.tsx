@@ -12,7 +12,7 @@ export function PilotHome() {
           <section className="hero heroPilot">
             <div className="heroOrnament" aria-hidden="true"><span /><span /><span /></div>
             <div className="heroContent">
-              <p className="eyebrow light">Yogyakarta pilot · music-led cultural travel</p>
+              <p className="eyebrow light">Yogyakarta · music-led cultural travel</p>
               <h1>Hear the place<br />before you go.</h1>
               <p className="lede">Start with the music that lives here. Follow it into culture, food, nature, stays and experiences that make the journey worth taking.</p>
               <div className="actions">
@@ -21,7 +21,7 @@ export function PilotHome() {
               </div>
             </div>
             <aside className="heroNowPlaying">
-              <span className="miniLabel">Pilot idea</span>
+              <span className="miniLabel">Follow the thread</span>
               <div className="soundBars" aria-hidden="true"><i/><i/><i/><i/><i/><i/><i/></div>
               <strong>Sound → Place → Culture → Journey</strong>
               <p>Music is the gateway, not the whole destination.</p>
@@ -54,12 +54,12 @@ export function PilotHome() {
 
         <section className="section shell journeySection">
           <div className="sectionHead">
-            <div><p className="eyebrow">How IndoEthno works</p><h2>A clear path from sound to travel intent.</h2></div>
+            <div><p className="eyebrow">How IndoEthno works</p><h2>Let one sound become a journey.</h2></div>
           </div>
           <div className="journeySteps">
             <div><span>01 · Sound</span><strong>Hear</strong><p>Choose a local sound or artist that makes the place worth noticing.</p></div>
             <div><span>02 · Place → Culture</span><strong>Follow</strong><p>Let the music lead into a real setting, then widen the story into culture and what sits around it.</p></div>
-            <div><span>03 · Travel intent</span><strong>Act</strong><p>Save what matters, review stays, or express interest in a group experience.</p></div>
+            <div><span>03 · Build the trip</span><strong>Choose</strong><p>Save what matters, find a stay, or ask whether a group experience could be possible.</p></div>
           </div>
         </section>
 
@@ -106,18 +106,18 @@ export function PilotHome() {
 
         <section className="section shell groupExperienceFeature">
           <div>
-            <p className="eyebrow light">For groups · future revenue layer</p>
-            <h2>What if the music<br />could happen for your group?</h2>
+            <p className="eyebrow light">For groups · by inquiry</p>
+            <h2>What if the music<br />could become part of your journey?</h2>
           </div>
           <div>
-            <p>Some performances may be arranged in advance when artists or communities explicitly confirm availability. The pilot measures interest first—no instant booking, no false promise.</p>
-            <Link className="btn lightBtn" href="/request-experience">Request group experience</Link>
+            <p>Some performances or cultural encounters may be possible when the artist or community confirms the date and format. Tell us what you have in mind and we will check before making any promise.</p>
+            <Link className="btn lightBtn" href="/request-experience">Ask about a group experience</Link>
           </div>
         </section>
       </main>
 
-      <div className="planbar"><span><strong>Build your Yogyakarta trip</strong><small>Saved locally · no login</small></span><Link className="btn" href="/plan">Open trip</Link></div>
-      <footer className="shell footer"><span>IndoEthno pilot · noindex</span><span>Original editorial · research stays behind the story</span></footer>
+      <div className="planbar"><span><strong>Build your Yogyakarta trip</strong><small>Saved in this browser · no login needed</small></span><Link className="btn" href="/plan">Open trip</Link></div>
+      <footer className="shell footer"><span>IndoEthno · Yogyakarta</span><span>Start with a sound. Follow the place.</span></footer>
     </>
   );
 }
