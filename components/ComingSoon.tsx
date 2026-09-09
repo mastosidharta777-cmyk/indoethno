@@ -1,4 +1,5 @@
 import './ComingSoon.css';
+import { ComingSoonSignup } from './ComingSoonSignup';
 
 export function ComingSoon() {
   return (
@@ -28,17 +29,7 @@ export function ComingSoon() {
             real people and deeper stories behind the sound.
           </p>
           <div className="comingLaunch">Coming Soon</div>
-          <div id="join" className="comingSignupBlock">
-            <p>Be the first to know when we launch.</p>
-            <form className="signup comingSignup">
-              <input aria-label="Email address" type="email" placeholder="Your email address" />
-              <button aria-label="Notify me" type="button">→</button>
-            </form>
-            <label className="comingConsent">
-              <input type="checkbox" />
-              <span>I’m interested in travel, culture and music updates from IndoEthno.</span>
-            </label>
-          </div>
+          <ComingSoonSignup />
         </div>
 
         <div className="comingRightRail" aria-hidden="true">

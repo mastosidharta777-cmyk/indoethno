@@ -53,3 +53,34 @@ with check (
   and char_length(contact) between 3 and 240
   and (message is null or char_length(message) <= 2000)
 );
+
+create table if not exists public.waitlist_signups (
+  id uuid primary key default gen_random_uuid(),
+  email text not null,
+  consent boolean not null default true check (consent = true),
+  source text not null default 'coming-soon',
+  created_at timestamptz not null default now(),
+
+  constraint waitlist_signups_email_length check (char_length(email) between 3 and 254),
+  constraint waitlist_signups_source_length check (char_length(source) between 1 and 80)
+);
+
+create unique index if not exists waitlist_signups_email_unique
+on public.waitlist_signups (lower(email));
+
+alter table public.waitlist_signups enable row level security;
+
+-- Public visitors can only join the list. They cannot enumerate or modify signups.
+revoke all on table public.waitlist_signups from anon, authenticated;
+grant insert on table public.waitlist_signups to anon, authenticated;
+grant all on table public.waitlist_signups to service_role;
+
+create policy "public can join coming soon waitlist"
+on public.waitlist_signups
+for insert
+to anon, authenticated
+with check (
+  consent = true
+  and source = 'coming-soon'
+  and char_length(email) between 3 and 254
+);
