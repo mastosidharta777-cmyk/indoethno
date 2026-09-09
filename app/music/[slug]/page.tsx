@@ -35,7 +35,7 @@ export default async function MusicStoryPage({ params }: { params: Promise<{ slu
         <div className="shell musicBody">
           {artist.videoId ? (
             <section className="mediaSection">
-              <div className="mediaLabel"><span>Start with the sound</span><small>Selected media from the artist/source channel</small></div>
+              <div className="mediaLabel"><span>Start with the sound</span><small>Selected from the artist channel</small></div>
               <div className="videoWrap"><iframe src={`https://www.youtube-nocookie.com/embed/${artist.videoId}`} title={`${artist.name} official video`} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /></div>
             </section>
           ) : (
@@ -47,7 +47,7 @@ export default async function MusicStoryPage({ params }: { params: Promise<{ slu
             <div className="storyCopy">
               <h2>{artist.headline}</h2>
               <p>{artist.story}</p>
-              <blockquote>Do not begin with a landmark. Begin with a sound, then see where it takes you.</blockquote>
+              <blockquote>Begin with a sound. Then see what part of Yogyakarta it opens.</blockquote>
             </div>
           </section>
 
@@ -66,8 +66,8 @@ export default async function MusicStoryPage({ params }: { params: Promise<{ slu
                 </div>
               </article>
               <article className="editorialCard">
-                <div className="meta">Journey logic</div>
-                <h3>Stay with the thread.</h3>
+                <div className="meta">Follow the thread</div>
+                <h3>Stay with the story.</h3>
                 <p>Once the sound has a place, the journey can widen naturally: language, food, heritage, contemporary culture and nearby discoveries begin to feel connected instead of random.</p>
                 <div className="cardActions"><a className="textLink" href="#culture">Continue the story ↓</a></div>
               </article>
@@ -89,8 +89,8 @@ export default async function MusicStoryPage({ params }: { params: Promise<{ slu
         </div>
       </main>
 
-      <section className="darkBand"><div className="shell performanceBand"><div><p className="eyebrow light">Performance</p><h2>Could this sound become part of the trip?</h2><p>IndoEthno shows current availability only when it has been directly confirmed.</p></div><div>{artist.performanceStatus === 'AVAILABLE_BY_REQUEST' ? <Link className="btn" href={`/request-experience?artist=${artist.slug}`}>Request a group experience</Link> : artist.performanceStatus === 'SCHEDULED' ? <a className="btn" href="https://ygflive.com/" target="_blank" rel="noreferrer">See official schedule</a> : <Link className="btn" href={`/request-experience?interest=${artist.slug}`}>Express group interest</Link>}<small>{artist.sourceNote}</small></div></div></section>
-      <footer className="shell footer"><span>IndoEthno pilot</span><span>Sound → Place → Culture → Around Here → Worth a Detour → Travel intent</span></footer>
+      <section className="darkBand"><div className="shell performanceBand"><div><p className="eyebrow light">Performance</p><h2>Could this sound become part of the trip?</h2><p>IndoEthno shows current availability only when it has been directly confirmed.</p></div><div>{artist.performanceStatus === 'AVAILABLE_BY_REQUEST' ? <Link className="btn" href={`/request-experience?artist=${artist.slug}`}>Request a group experience</Link> : artist.performanceStatus === 'SCHEDULED' ? <a className="btn" href="https://ygflive.com/" target="_blank" rel="noreferrer">See official schedule</a> : <Link className="btn" href={`/request-experience?interest=${artist.slug}`}>Ask about a group experience</Link>}<small>{artist.sourceNote}</small></div></div></section>
+      <footer className="shell footer"><span>IndoEthno · Yogyakarta</span><span>Start with a sound. Follow the place.</span></footer>
     </>
   );
 }
