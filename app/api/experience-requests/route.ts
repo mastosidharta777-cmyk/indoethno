@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { createSupabaseServerClient } from '@/lib/supabase/server';
+import { isPilot } from '@/lib/site';
 
 const GROUP_TYPES = new Set([
   'Private traveler group',
@@ -36,6 +37,10 @@ function clean(value: unknown, max: number) {
 }
 
 export async function POST(request: Request) {
+  if (!isPilot) {
+    return new Response(null, { status: 404 });
+  }
+
   const supabase = createSupabaseServerClient();
   if (!supabase) {
     return NextResponse.json({ ok: false, message: 'Inquiry storage is not configured yet.' }, { status: 503 });
