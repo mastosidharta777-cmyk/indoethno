@@ -86,6 +86,7 @@ export const artists: Artist[] = [
     headline: 'A centuries-old sound that refuses to stand still.',
     story:
       'In Yogyakarta, gamelan is not only preserved; it is rehearsed, reinterpreted, debated and shared. Gayam16 and the Yogyakarta Gamelan Festival create a meeting point for traditional practice, younger musicians, workshops, technology and international collaboration. The result is not a museum display but a living scene that travelers can hear, watch and, when programs allow, join.',
+    videoId: 'uBe7EnXUbP0',
     channelUrl: 'https://www.youtube.com/@Gayam16',
     instagramUrl: 'https://www.instagram.com/komunitasgayam16/',
     performanceStatus: 'DISCOVERY_ONLY',
