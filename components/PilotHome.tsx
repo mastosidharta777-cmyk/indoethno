@@ -58,8 +58,8 @@ export function PilotHome() {
           </div>
           <div className="journeySteps">
             <div><span>01 · Sound</span><strong>Hear</strong><p>Choose a local sound or artist that makes the place worth noticing.</p></div>
-            <div><span>02 · Place → Culture</span><strong>Follow</strong><p>Move into a verified place relationship, then Culture, Around Here and Worth a Detour.</p></div>
-            <div><span>03 · Travel intent</span><strong>Act</strong><p>Save ideas, review stays, or express interest in a group experience.</p></div>
+            <div><span>02 · Place → Culture</span><strong>Follow</strong><p>Let the music lead into a real setting, then widen the story into culture and what sits around it.</p></div>
+            <div><span>03 · Travel intent</span><strong>Act</strong><p>Save what matters, review stays, or express interest in a group experience.</p></div>
           </div>
         </section>
 
@@ -68,17 +68,17 @@ export function PilotHome() {
             <div className="destinationCopy">
               <p className="eyebrow light">Follow the sound</p>
               <h2>Yogyakarta,<br />beyond the obvious.</h2>
-              <p>Music opens the door. The destination layer gives travelers cultural context and practical reasons to stay longer.</p>
+              <p>Once the music has opened the door, the city starts to connect differently: court culture, museums, contemporary art, food, neighborhoods and detours become chapters of the same trip.</p>
               <div className="categoryLine"><span>Culture</span><span>Food</span><span>Nature</span><span>Events</span><span>Stay</span></div>
               <Link className="btn lightBtn" href="/destination/yogyakarta">Explore the destination</Link>
             </div>
             <div className="destinationTiles">
               {culturalContext.map((item) => (
-                <a href={item.url} target="_blank" rel="noreferrer" className="destinationTile" key={item.id}>
+                <article className="destinationTile" key={item.id}>
                   <span className="miniLabel">{item.category}</span>
                   <strong>{item.name}</strong>
-                  <small>Verified source ↗</small>
-                </a>
+                  <small>{item.blurb}</small>
+                </article>
               ))}
             </div>
           </div>
@@ -87,7 +87,7 @@ export function PilotHome() {
         <section className="section shell">
           <div className="sectionHead">
             <div><p className="eyebrow">Destination-wide</p><h2>Worth a detour</h2></div>
-            <p>Interesting enough to shape the trip, but separate from “Around Here” so distance is never misleading.</p>
+            <p>Some places deserve their own half-day or evening. They sit outside the immediate Ngasem cluster, but can reshape the trip.</p>
           </div>
           <div className="grid3 editorialGrid">
             {detours.map((item, index) => (
@@ -97,7 +97,6 @@ export function PilotHome() {
                 <h3>{item.name}</h3>
                 <p>{item.note}</p>
                 <div className="cardActions">
-                  <a className="textLink" href={item.url} target="_blank" rel="noreferrer">Source ↗</a>
                   <SaveButton compact item={{ id: item.id, type: 'detour', title: item.name, subtitle: item.category, href: '/destination/yogyakarta#detours' }} />
                 </div>
               </article>
@@ -118,7 +117,7 @@ export function PilotHome() {
       </main>
 
       <div className="planbar"><span><strong>Build your Yogyakarta trip</strong><small>Saved locally · no login</small></span><Link className="btn" href="/plan">Open trip</Link></div>
-      <footer className="shell footer"><span>IndoEthno pilot · noindex</span><span>Official embeds · original editorial · verified-source workflow</span></footer>
+      <footer className="shell footer"><span>IndoEthno pilot · noindex</span><span>Original editorial · research stays behind the story</span></footer>
     </>
   );
 }
