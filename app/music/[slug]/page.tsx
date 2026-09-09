@@ -11,7 +11,7 @@ export default async function MusicStoryPage({ params }: { params: Promise<{ slu
   const artist = getArtist(slug);
   if (!artist) notFound();
 
-  const statusLabel = artist.performanceStatus === 'SCHEDULED' ? 'Scheduled performance' : artist.performanceStatus === 'AVAILABLE_BY_REQUEST' ? 'Available by request' : 'Discovery only';
+  const statusLabel = artist.performanceStatus === 'SCHEDULED' ? 'Scheduled performance' : artist.performanceStatus === 'AVAILABLE_BY_REQUEST' ? 'Group requests open' : 'No current schedule listed';
 
   return (
     <>
