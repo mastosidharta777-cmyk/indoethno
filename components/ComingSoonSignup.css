@@ -1,0 +1,34 @@
+.comingHoneypot {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.comingSignup button:disabled,
+.comingSignup input:disabled,
+.comingConsent input:disabled {
+  cursor: wait;
+  opacity: .7;
+}
+
+.comingSignupStatus {
+  min-height: 16px;
+  margin-top: 8px;
+  font-size: 10px;
+  line-height: 1.45;
+  color: rgba(255,255,255,.66);
+}
+
+.comingSignupStatus.isSuccess {
+  color: #e5b866;
+}
+
+.comingSignupStatus.isError {
+  color: #f2b7aa;
+}
