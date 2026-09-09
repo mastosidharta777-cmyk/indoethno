@@ -98,9 +98,9 @@ export function PlanClient() {
 
       <div className="tripNext">
         <div>
-          <span className="eyebrow">Next decision</span>
-          <h2>Turn saved interest into a visit.</h2>
-          <p>In V1, accommodation and group experiences remain external/inquiry flows. No booking is implied.</p>
+          <span className="eyebrow">Travel intent</span>
+          <h2>Choose what this interest becomes.</h2>
+          <p>Review a stay, keep planning, or send a group experience inquiry. V1 measures intent without implying live booking or availability.</p>
         </div>
         <div className="actions">
           <Link className="btn dark" href="/destination/yogyakarta#stay">Review stays</Link>
